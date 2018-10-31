@@ -1,17 +1,17 @@
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.AfterClass;
 
 public class TestClass {
-@BeforeAll
-static void beforeAll(){System.out.print("Before all");}
+@BeforeClass
+public static void beforeAll(){System.out.print("Before all");}
 
     @Test
-     void test1(){
+   public   void test1(){
         System.out.print("Inside test1");
     }
     @Test
-    void test2(){
+  public   void test2(){
         System.out.print("Inside test2");
     }
 /*
@@ -23,6 +23,6 @@ static void beforeAll(){System.out.print("Before all");}
 
     }*/
 
-@AfterAll
-    static void afterAll(){System.out.print("After all");}
+@AfterClass
+   public static void afterAll(){System.out.print("After all");}
 }
